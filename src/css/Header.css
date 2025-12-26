@@ -1,0 +1,61 @@
+/* body {
+  font-family: 'Roboto', sans-serif;
+}  */
+
+.navbar {
+	display: flex;
+	font-weight: 100;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 50px;
+	background-color: rgb(255, 255, 255);
+}
+
+.logo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	font-weight: 300; /* тоньше, чем 400, 100 иногда не поддерживается */
+	letter-spacing: 0.2em; /* визуально увеличивает воздушность */
+	color: rgb(79, 79, 79);
+	text-decoration: none;
+	cursor: pointer;
+	margin-left: 40px;
+}
+.menu {
+	display: flex;
+	gap: 25px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* ВАЖНО: делаем li flex */
+.menu li {
+	display: flex;
+	align-items: center; /* выравнивание текста и иконки */
+	text-transform: uppercase;
+	color: rgb(149, 149, 149);
+	font-weight: 100;
+	font-size: 50%;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	letter-spacing: 0.2em; /* расстояние между буквами */
+}
+
+.menu li:hover {
+	color: gray;
+}
+
+/* УБИРАЕМ font-size отсюда */
+.menu li a {
+	color: inherit;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+}
+
+/* Иконка = размер текста */
+.menu li a i {
+	font-size: 1em;
+}
